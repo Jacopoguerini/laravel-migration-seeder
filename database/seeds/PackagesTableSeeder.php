@@ -12,7 +12,7 @@ class PackagesTableSeeder extends Seeder
      */
     public function run()
     {
-        $arrayPackage = config('package');
+        $arrayPackage = config('packages');
 
         foreach ($arrayPackage as $item) {
             $package = new Package();
@@ -32,7 +32,5 @@ class PackagesTableSeeder extends Seeder
 
             $package->save();
         }
-
-
     }
 }
